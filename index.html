@@ -161,9 +161,117 @@
   </div>
 </section>
 
-<!-- News Section -->
+<!-- Results Section -->
 <section class="section">
-    <div class="container">      
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content">
+          <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <caption style="caption-side: top; text-align: center; margin-bottom: 1em;">
+              <strong>Table 1:</strong> LLM accuracy at labeling correct and incorrect student actions and generating next step demonstrations (bottom out hints) across the tutors.
+            </caption>
+            <thead>
+              <tr>
+                <th>Tutor Platform</th>
+                <th>LLM Model</th>
+                <th>Correct Accuracy</th>
+                <th>Incorrect Accuracy</th>
+                <th>Demo Accuracy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="4">CTAT Mathtutors<br>(10 domains)</td>
+                <td>Sonnet-3.5</td>
+                <td>61.92%</td>
+                <td>36.21%</td>
+                <td><strong>56.50%</strong></td>
+              </tr>
+              <tr>
+                <td>Haiku-3.5</td>
+                <td><strong>81.06%</strong></td>
+                <td>25.05%</td>
+                <td>36.49%</td>
+              </tr>
+              <tr>
+                <td>GPT-4o</td>
+                <td>28.11%</td>
+                <td><strong>42.63%</strong></td>
+                <td>38.89%</td>
+              </tr>
+              <tr>
+                <td>DeepSeek-v2.5</td>
+                <td>59.96%</td>
+                <td>30.84%</td>
+                <td>39.33%</td>
+              </tr>
+              <tr>
+                <td rowspan="4">Apprentice<br>(30 domains)</td>
+                <td>Sonnet-3.5</td>
+                <td>86.54%</td>
+                <td>46.56%</td>
+                <td>64.20%</td>
+              </tr>
+              <tr>
+                <td>Haiku-3.5</td>
+                <td><strong>88.36%</strong></td>
+                <td>22.34%</td>
+                <td>49.73%</td>
+              </tr>
+              <tr>
+                <td>GPT-4o</td>
+                <td>74.61%</td>
+                <td><strong>49.80%</strong></td>
+                <td><strong>70.75%</strong></td>
+              </tr>
+              <tr>
+                <td>DeepSeek-v2.5</td>
+                <td>82.00%</td>
+                <td>48.92%</td>
+                <td>58.35%</td>
+              </tr>
+              <tr>
+                <td rowspan="4">OATutor<br>(183 domains)</td>
+                <td>Sonnet-3.5</td>
+                <td>79.59%</td>
+                <td><strong>38.85%</strong></td>
+                <td><strong>52.10%</strong></td>
+              </tr>
+              <tr>
+                <td>Haiku-3.5</td>
+                <td><strong>92.36%</strong></td>
+                <td>10.82%</td>
+                <td>36.63%</td>
+              </tr>
+              <tr>
+                <td>GPT-4o</td>
+                <td>71.20%</td>
+                <td>38.69%</td>
+                <td>51.07%</td>
+              </tr>
+              <tr>
+                <td>DeepSeek-v2.5</td>
+                <td>90.87%</td>
+                <td>17.21%</td>
+                <td>43.89%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="container is-max-desktop has-text-centered mb-6">
+          <p class="is-size-5"><strong>Want to add your model or domain to TutorGym?</strong> Reach out to <a href="mailto:dweitekamp3@gatech.edu">Danny</a> or <a href="mailto:msddiqui66@gatech.edu">Momin</a>!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- News Section -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
       <h2 class="title is-3 has-text-centered mt-5">Updates</h2>    
     <div class="columns is-centered">
       <div class="column is-three-fifths">        
@@ -180,6 +288,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </section>
@@ -296,6 +405,24 @@
   max-width: 1300px;
   margin: 0 auto;
   display: block;
+}
+
+.table caption {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.table td {
+  vertical-align: middle !important;
+}
+
+.table th {
+  background-color: #f5f5f5;
+  text-align: center !important;
+}
+
+.table td {
+  text-align: center;
 }
 </style>
 
